@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Tutorials
+
+    </title>
+    <style>
+        :root {
+            background: black;
+        }
+
+        #para {
+            background-color: wheat;
+            font-size: 1.0rem;
+            align-items: center;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conatiner">
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ipsum sequi adipisci delectus
+            autem odio aut et placeat? Harum itaque perspiciatis, voluptatibus dolore repellendus animi id in minima
+            ipsa fugit rerum tempora eaque asperiores facere voluptate, rem soluta expedita possimus molestiae? Facilis
+            dolor cumque odit voluptate sapiente voluptas ab fuga consequatur, rerum neque! Incidunt tempore eaque eos
+            in enim ut harum odio. Doloribus temporibus esse eius quas ullam vitae libero, reprehenderit dolorum
+            tempore, sit minima explicabo.W</p>
+    </div>
+    <script>
+        let jsonobj = {
+            name: "Raaz The Roomie ",
+            Channel: "Code with Raaz ", 
+            Girlfriend : "SiNGLE + cHAKKAR ",
+
+            Channel2 : "Pornhub.com"
+
+        }
+        console.log(jsonobj)
+        
+
+        let mynewjson =JSON.stringify(jsonobj)
+        console.log(mynewjson)
+
+        let mynewjson2 = JSON.parse(mynewjson)
+        console.log(mynewjson2)
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions in Java script</title>
+
+</head>
+
+<body>
+    <div class="coontainer">
+        This is Arrow Tutorials 
+        
+    </div>
+    <script>
+        //  function greet() {
+        //      console.log ("Good Morning ")
+
+        //  }
+        //  greet()
+
+        //  Arrow Function 
+        let greet = () => {
+            console.log('Good Morning ')
+        }
+        setTimeout(() => {
+            console.log('This is inside and deep ')
+        }, 3000);
+
+        let sum = (a, b) => a + b;
+
+        let obj1 = {
+            names: ["Ashish", "Satish", "OPPEPPE", "SKILKKS "],
+            speaks() {
+                this.names.forEach((students) => {
+                    console.log(" Kudkuu koo " + students)
+                })
+
+            }
+
+        }
+        obj1.speaks()
+
+
+
+        let obj2 = {
+            greeting : "Namskar",
+            names: ["Ashish", "Satish", "OPPEPPE", "SKILKKS "],
+            speaks() {
+                this.names.forEach((students) => {
+                    console.log(this.greeting + " Kudkuu koo " + students  )
+                })
+
+            }
+
+        }
+        obj2.speaks()
+
+
+    </script>
+</body>
+
+</html>

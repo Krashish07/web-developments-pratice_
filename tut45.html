@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries in CSS Grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer ';
+        }
+
+        @media only screen and (max-width:300px) {
+            body {
+                background-color: rgb(127, 65, 65);
+            }
+            aside{
+                display: none;
+            }
+        }
+
+        @media only screen and (min-width: 300px) and (max-width:500px) {
+            body {
+                background-color: rgb(40, 40, 109);
+            }
+            aside{
+                display: none;
+            }
+        }
+
+        @media (min-width: 500px) and (max-width:800px) {
+            body {
+                background-color: yellow;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside '
+                    'footer footer footer footer ';
+            }
+        }
+
+        @media (min-width: 800px) {
+            body {
+                background-color: green;
+            }
+        }
+
+        .bdr {
+            border: 2px solid red;
+            padding: 23px;
+            background-color: rgb(173, 131, 17);
+        }
+
+
+        nav {
+            grid-area: navbar;
+        }
+
+        aside {
+            grid-area: aside;
+
+        }
+
+        section {
+            grid-area: section;
+
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About us </span>
+            <span>Contact us </span>
+            <span>Career</span>
+
+
+        </nav>
+        <aside class="bdr">
+
+           <h2>More about us</h2> 
+           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium et minima, ratione temporibus fugit reiciendis modi, unde fugiat, aperiam dicta distinctio nobis est tempore.</p>
+
+        </aside>
+        <section class="bdr">
+            <h2>Learn is CSS in Hindi
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At deleniti delectus saepe eveniet quo alias
+                facere consequuntur amet minus debitis necessitatibus ullam corporis earum cumque, laboriosam voluptates
+                dolore quis, aperiam veritatis corrupti. Repellendus est adipisci laboriosam, sed consequuntur tempora
+                praesentium sit maiores, totam cum culpa corporis consequatur non eius ut aut eveniet harum. Vitae
+                perspiciatis magnam quasi reiciendis quibusdam quas, impedit itaque quod dolor nam aperiam ducimus
+                veniam aut inventore debitis consequatur sit iure tenetur repellendus a cupiditate? Iusto eos fuga cum
+                error a officiis reprehenderit quia exercitationem sequi provident! Aperiam provident architecto culpa
+                accusantium ipsa, earum consectetur nobis.</p>
+        </section>
+    </div>
+    <footer class="bdr">
+        Copyright Code with Ashish
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval and setTimeout</title>
+
+
+</head>
+
+<body>
+    <div class="container">
+        This is Display Time Out Tutorials <span id="time"> </span>
+
+
+    </div>
+    <script>
+
+        function greet(name, byeText) {
+            console.log("Hello Goood Morning " + name + "" + byeText);
+
+
+        }
+        // setTimeout (greet, 5000 ," Harry " , " take Care ");
+
+
+        function displayTime(){
+            time = new Date ()
+            console.log(time)
+            document.getElementById ('time').innerHTML = time 
+        }
+        setInterval(displayTime , time , 10000)
+    </script>
+</body>
+
+</html>

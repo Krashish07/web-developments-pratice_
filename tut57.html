@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in Java Script </title>
+    
+    <style>
+    #btn {
+        padding: 12px 16px;
+        background-color: rgb(49, 11, 5);
+        border: 2px solid rgb(28, 27, 27);
+        font-size: 0.9rem;
+        cursor: pointer;
+        border-radius: 14px;
+        /* font-weight: 100; */
+    }
+</style>
+</head>
+<body>
+      <!-- Browser events:
+    click
+    contextmenu
+    mouseover/mouseout
+    mousedown/mouseup
+    mousemove
+
+    submit 
+    focus
+
+    DOMContentLoaded
+
+    transitionend -->
+
+    <div class="container">
+        <h1>This is Heading For Events </h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo alias, fugiat eum nesciunt quis,
+            molestias voluptas veritatis consequuntur dolore facilis ipsum deleniti laudantium eius. Atque dolore ab
+            iure nihil. Nihil iste illum numquam veritatis ipsum, eum rerum quisquam. Rem dolores adipisci ipsam optio
+            aspernatur architecto tempore neque est debitis quasi, ad quibusdam, iusto recusandae, molestiae nihil. At
+            quaerat architecto impedit ducimus, nisi pariatur doloribus qui reprehenderit expedita sed, minima nam,
+            alias consequatur similique? Laboriosam ullam magnam minus alias consequatur cupiditate, reprehenderit harum
+            hic dolorum eum placeat iure ipsum molestiae facilis nesciunt earum, modi vitae. Cum iusto nobis laudantium
+            aspernatur dolore nulla itaque repudiandae consequatur enim saepe hic quo pariatur tempore error sunt
+            incidunt quia repellendus facilis minima, natus excepturi autem illo. Ex quod id voluptatibus ipsum
+            accusantium voluptas at quibusdam officia fuga odio asperiores in earum magni, rem numquam blanditiis quam.
+            Necessitatibus error eligendi architecto repellendus dicta corrupti facilis nobis veritatis, laborum culpa
+            ratione at adipisci. Soluta, ea? Beatae dolorum iusto vel dolores placeat laudantium itaque soluta nesciunt
+            quaerat ipsam animi sit molestiae nobis, consequuntur vitae doloribus possimus minima ipsa hic unde sequi et
+            sed ex. Temporibus sit voluptatum, necessitatibus quo magni est quis, dolorum, nobis corrupti consequatur
+            tempore deleniti. Voluptatibus sit ipsam architecto ut minus reiciendis recusandae, hic labore ad quaerat
+            corrupti deserunt. Nesciunt magni quos inventore, est fuga numquam, animi harum voluptate, quia reiciendis
+            repellendus officia voluptas possimus? Quod explicabo corporis perferendis ab eos numquam debitis est
+            voluptas ea accusamus. Iusto dolorum molestias repellat aliquid adipisci, vero odio iure est ad tempora
+            temporibus quasi laboriosam, quae ducimus dolorem laudantium. Culpa quod nemo adipisci quidem minima,
+            aperiam odit nulla, nobis est corrupti architecto, quae cumque dolores inventore voluptatibus veniam!
+            Quisquam voluptas, hic exercitationem adipisci facilis nam molestias inventore fuga quam aut, laborum quod
+            repellat impedit minus enim rerum maiores alias commodi repudiandae fugiat omnis labore? Atque in sit amet?
+            Ipsum excepturi nihil incidunt ea. Dicta veritatis quo dolor explicabo dolore repellendus necessitatibus
+            facere unde molestiae quam! Assumenda doloremque maxime in dolore labore magnam eius possimus veniam ratione
+            perspiciatis! At odit amet praesentium totam officia?</p>
+    </div>
+    <button id="btn" onclick="toggleHide()">Show / Hide </button>
+    <script>
+        function toggleHide(){
+            let btn = document.getElementById ("btn")
+            let para = document.getElementById ("para")
+            // para.style.display = ('none')
+
+
+        
+        if (para.style.display !='none'){
+            para.style.display = ('none')
+
+            
+        }
+        else{
+            para.style.display =('block')
+
+        }
+    }
+    let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run(){
+            console.log('Mouse Inside')
+        });
+
+        para.addEventListener('mouseout', function run(){
+            console.log('Mouse now went outside')
+        });
+
+    </script>
+</body>
+</html>

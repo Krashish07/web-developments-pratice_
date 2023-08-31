@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope of Else If And Switch</title>
+
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li>item&</li>
+            <li>item&</li>
+            <li>item&</li>
+            <li>item&</li>
+            <li>item&</li>
+            <li>item&</li>
+            <li>item&</li>
+        </ul>
+    </div>
+
+    <div>
+        <ul>
+            <li>item-&</li>
+            <li>item-&</li>
+            <li>item-&</li>
+            <li>item-&</li>
+            <li>item-&</li>
+            <li>item-&</li>
+            <li>item-&</li>
+            <li>item-&</li>
+        </ul>
+    </div>
+    <script>
+        // This Var relationship is toxices now so this time breakup with Var Variables 
+
+        // var str =('this is string ')
+        // console.log(str)
+
+        // /  Now start relationship with Let variables
+
+        // let a = ("this is second string")
+        // console.log(a)
+
+
+        // let a4 =("this is third string")
+        // console.log(a4)
+
+        // Const variables never Changed
+
+        // const pyr = "This is cannot be changed "
+        // a = "this can be changed but you cannot changed"
+        // console.log(pyr)
+
+        // Let variables used  to define ages and from applications 
+
+        let age = 5;
+
+
+        if (age > 18) {
+
+            console.log("You can somke Cannabis ");
+        }
+        else if (age == 5) {
+            console.log("Age is 5")
+        }
+        else {
+            console.log("You cannot somke cannabis ");
+        }
+        // Const Variables used for define 
+
+        const cups = 48;
+        switch (cups) {
+            case 4:
+                console.log("The Value of  cup no is 4")
+                break;
+
+            case 41:
+                console.log("The value of cups is 41")
+                break;
+
+            case 44:
+                console.log("The value of cups is 44")
+                break;
+
+            default:
+                console.log("The Value of cup none is 4 and 5 , 41 ,44")
+                break;
+        }
+
+    </script>
+</body>
+
+</html>
